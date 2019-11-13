@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/heading_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/search_layout"
+        android:text="Seach fire"
+        android:textColor="#9C27B0"
+        android:textSize="24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/liner">
+        <EditText
+            android:id="@+id/SearchField"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:inputType="textPersonName"
+            android:hint="Search here"
+            android:textColor="#03A9F4"
+            android:textSize="24sp" />
+
+        <ImageButton
+            android:id="@+id/imageBtn"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="0dp"
+            android:background="@drawable/ic_search_black_24dp"
+            android:baselineAlignBottom="false" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
+</androidx.core.widget.NestedScrollView>

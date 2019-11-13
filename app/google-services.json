@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "812733524305",
+    "firebase_url": "https://hien-8320d.firebaseio.com",
+    "project_id": "hien-8320d",
+    "storage_bucket": "hien-8320d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:812733524305:android:4355962f1be9671ea94b70",
+        "android_client_info": {
+          "package_name": "org.tttnhung.hien"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "812733524305-g0onuvcu5mvti8e3jsnltg9li1fqcptf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.tttnhung.hien",
+            "certificate_hash": "d772492a95ee351f481e357cdb2b0bbbc061b780"
+          }
+        },
+        {
+          "client_id": "812733524305-iln42scgsnrvrdhn1pd2j6t1k4jfdadd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQX0BirqelbwwpNVe9YpabiX790pWwA-o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "812733524305-iln42scgsnrvrdhn1pd2j6t1k4jfdadd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
