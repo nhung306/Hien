@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "812733524305-5jdujhnj43adnpp1vn9l2irna3vmjsqi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.tttnhung.hien",
+            "certificate_hash": "a158ffb129883cbfddfabd171a3c5afeb74b6320"
+          }
+        },
+        {
           "client_id": "812733524305-g0onuvcu5mvti8e3jsnltg9li1fqcptf.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

@@ -2,32 +2,32 @@ package org.tttnhung.hien;
 
 public class ImageInfo {
 
-    public String imageName;
+    public String image;
 
-    public String imageURL;
+    public String name;
 
     public ImageInfo() {
 
     }
 
-    public ImageInfo(String imageName, String imageURL) {
-        this.imageName = imageName;
-        this.imageURL = imageURL;
+    public ImageInfo(String image, String name) {
+        this.image = image;
+        this.name = name;
     }
 
-    public String getImageName() {
-        return imageName;
+    public String getImage() {
+        return image;
     }
 
-    public void setImageName(String imageName) {
-        this.imageName = imageName;
+    public void setImage(String image) {
+        this.image = image;
     }
 
-    public String getImageURL() {
-        return imageURL;
+    public String getName() {
+        return name;
     }
 
-    public void setImageURL(String imageURL) {
-        this.imageURL = imageURL;
+    public void setName(String name) {
+        this.name = name;
     }
 }

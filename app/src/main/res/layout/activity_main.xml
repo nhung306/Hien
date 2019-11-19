@@ -1,55 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.core.widget.NestedScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
-<LinearLayout
-    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+<RelativeLayout
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
     <TextView
         android:id="@+id/heading_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:background="@drawable/search_layout"
-        android:text="Seach fire"
-        android:textColor="#9C27B0"
-        android:textSize="24dp" />
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Firebase Search"
+        android:textColor="#555555"
+        android:textSize="24sp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <EditText
+        android:id="@+id/search_field"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:id="@+id/liner">
-        <EditText
-            android:id="@+id/SearchField"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:inputType="textPersonName"
-            android:hint="Search here"
-            android:textColor="#03A9F4"
-            android:textSize="24sp" />
+        android:layout_alignStart="@+id/heading_label"
+        android:layout_below="@+id/heading_label"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toStartOf="@+id/search_btn"
+        android:background="@drawable/search_layout"
+        android:ems="10"
+        android:fontFamily="@font/nunito_semibold"
+        android:hint="Search here"
+        android:inputType="textPersonName"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:textColor="#999999"
+        android:textSize="16sp" />
 
-        <ImageButton
-            android:id="@+id/imageBtn"
-            android:layout_width="60dp"
-            android:layout_height="match_parent"
-            android:layout_marginRight="0dp"
-            android:background="@drawable/ic_search_black_24dp"
-            android:baselineAlignBottom="false" />
-    </LinearLayout>
+    <ImageButton
+        android:id="@+id/search_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/search_field"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/search_field"
+        android:layout_marginRight="30dp"
+        android:background="@android:color/background_light"
+        app:srcCompat="@mipmap/search_button" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_field"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:id="@+id/result_list">
     </androidx.recyclerview.widget.RecyclerView>
 
-</LinearLayout>
+</RelativeLayout>
 </androidx.core.widget.NestedScrollView>
